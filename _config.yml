@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Anning Gao"
+title                    : "About"
 title_separator          : "-"
 name                     : &name "Anning Gao"
 description              : &description "personal description"
@@ -224,6 +224,9 @@ collections:
   talks:
     output: true
     permalink: /:collection/:path/
+  research:
+    output: true
+    permalink: /:collection/:path/
 
 
 # These settings control how pages and collections are included in the site
@@ -280,7 +283,15 @@ defaults:
     values:
       layout: talk
       author_profile: true
-      share: true
+      share: false
+  # _research
+  - scope:
+      path: ""
+      type: research
+    values:
+      layout: research
+      author_profile: true
+      share: false
 
 
 # Sass/SCSS
