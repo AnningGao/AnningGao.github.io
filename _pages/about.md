@@ -1,13 +1,11 @@
 ---
 permalink: /
-title: 
+title: Hello!
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
-
-# Hello!
 
 My name is Anning Gao (高安宁), a undergraduate student majoring in physics in Tsinghua University. 
 
