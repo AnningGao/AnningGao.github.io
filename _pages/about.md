@@ -28,3 +28,5 @@ More details about my research projects can be found in the [research](https://a
 - [J. Xavier Prochaska](https://www.astro.ucsc.edu/faculty/index.php?uid=jxp)
 - [Zheng Cai](https://astro.tsinghua.edu.cn/info/1039/1315.htm)
 - [Cheng Zhao](https://astro.tsinghua.edu.cn/info/1039/2497.htm)
+
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fanninggao.github.io&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
