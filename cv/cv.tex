@@ -1,0 +1,204 @@
+\documentclass{resume} % Use the custom resume.cls style
+\usepackage[dvipsnames]{xcolor}
+\usepackage{hyperref}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage[left=0.4 in,top=0.3 in,right=0.4 in,bottom=0.3in]{geometry} % Document margins
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=blue,
+}
+% \usepackage{array}
+\name{Anning Gao} % Your name
+% \address{C-101, Dreamland Apartment, Backbone Park, B/H Balaji Hall, Rajkot-360004, Gujarat} % Your address
+%\address{123 Pleasant Lane \\ City, State 12345} % Your secondary addess (optional)
+% \address{+86 19800363861 \\ gao.2526@osu.edu} % Your phone number and email
+\address{gao.2526@osu.edu \\ \href{https://anninggao.github.io}{https://anninggao.github.io}}
+\definecolor{TsinghuaPurple}{cmyk}{0.58,0.90,0,0}
+\renewenvironment{rSection}[1]{
+\sectionskip
+\textcolor{TsinghuaPurple}{\MakeUppercase{#1}}
+\sectionlineskip
+\hrule
+\begin{list}{}{
+%\setlength{\leftmargin}{1.5em}
+\setlength{\leftmargin}{0em}
+}
+\item[]
+}{
+\end{list}
+}
+
+
+\begin{document}
+
+\begin{rSection}{Research INTERESTS}
+
+\begin{enumerate}
+    \item Observational cosmology: redshift survey / lensing / CMB, BAO, Lyman-$\alpha$ forest, non-standard statistics 
+    \item Medium physics: IGM \& reionization, CGM \& galaxy ecosystem, multiband observation (UV / radio / ...)
+    \item Galaxy physics: co-evolution with dark matter halo \& SMBH, star formation activity, feedback from AGN \& SN 
+    \item Statistics \& machine learning: Bayesian methods, neutral network applications on observations \& numerical simulations 
+    % \item High energy transients: 
+\end{enumerate}
+
+\end{rSection}
+
+\begin{rSection}{Education}
+    \begin{rSubsection}{Tsinghua University} {2020 - 2025}{B.S. in Physics \hfill \textup{Beijing, China}}{}
+        \item Thesis: Cosmology Constraints from Cosmic Void Size Function
+    \end{rSubsection}
+
+    \begin{rSubsection}{The Ohio State University} {2025 - Present}{Ph.D. in Astronomy \hfill \textup{Columbus, Ohio, USA}}{}
+    \item Advisor: Prof. Yuan-Sen Ting
+    \end{rSubsection}
+
+\end{rSection}
+
+
+\begin{rSection}{Publication}
+\textbf{A. Gao}, J. X. Prochaska, et al., "Measuring the Mean Free Path of HI Ionizing Photons at $3.2\leq z\leq4.6$ using DESI Y1 Quasars", 2025, Astrophysical Journal Letters 981 L27, \href{https://arxiv.org/abs/2411.15838}{arXiv:2411.15838}.
+\end{rSection}
+
+
+\begin{rSection}{RESEARCH EXPERIENCE}
+
+    \begin{rSubsection}{Measuring the Mean Free Path (MFP) of HI Ionizing Photons using DESI Data} {Jul. 2023 - Sep. 2024} {Supervisor: Prof. Jason X. Prochaska (UC Santa Cruz)}
+
+    \item Constructed the dataset from DESI Y1 QSO spectra , which is $\sim10$ times larger than previous datasets.
+    \item Wrote the \href{https://github.com/AnningGao/MeanFreePath}{package for MFP calculation} and measured the MFP at $3.2<z<4.6$ with unprecedented precision
+    \item Validated our result on the selection of quasar SED, the treatment of Lyman series opacity and the MFP definition.
+    \item Confirmed that MFP evolves much slower than previous estimates with high confidence.
+    \item Our result presents challenges to the current IGM absorber models and gives new constraints on the reionization history.
+        
+    \end{rSubsection}
+
+    \begin{rSubsection}{Constraining the Cosmology with Void Size Function based on Delaunay Triangulation}{Mar. 2024 - Present}{Supervisor: Prof. Cheng Zhao (Tsinghua University)}
+
+    \item Constructed the void catalog from ~40,000 Quijote halo catalogs with different cosmological parameters.
+    \item Trained an AI-based emulator to predict the void size function under different cosmologies.
+    \item Tested the emulator on Quijote and performed MCMC fitting for the cosmological parameters.
+    \item {\bf Future:} Improve the method to remove the severe systematics and apply the method to the BOSS galaxy catalog.
+
+    \end{rSubsection}
+
+    \begin{rSubsection}{High-redshift CGM OVI Absorption Analysis using DESI Data} {Feb. 2023 - Feb. 2024}{Supervisor: Prof. Zheng Cai and Dr. Siwei Zou (Tsinghua University)}
+        
+    % \item Use multiple tools like Pyraf, EAZY and SExtractor to do photometric measurement on JWST images.
+    \item Fitted the continuum of $\sim15,000$ $z>2.5$ DESI QSO spectra with a newly proposed unsupervised machine learning method.
+    \item Visually inspected $\sim2000$ spectra to find DLA-related OVI absorption features, found $\sim30$ OVI absorption candidates and fitted the Voigt profile to extract column densities and the Doppler parameter.
+    \item Statistically analysed the OVI absorption sample to find the properties of high-$z$ warm-phase CGM.
+    \item Performed simulations using Cloudy to get ionization parameters and hydrogen number densities that cannot be directly observed.
+    % \item Wrote the preprocess code for DESI spectrum with functions like dealing with the overlapping area, clipping the abnormal point, rebining to the same restframe grid, masking the DLA, etc.
+    % \item Provide training samples for a ML model QFA to better fit the continuum of the quasar spectrum with Lyman alpha forest.
+    % \item {\bf Future:} Predict the mass of the central black hole of AGN based on reverberation mapping and explore which emission line is the most useful to the prediction.
+    \end{rSubsection}
+
+    %------------------------------------------------
+
+    % \begin{rSubsection}{Study of the Transient AT2022jrp} {Sep. 2022 - Jan. 2023}{Supervisor: Prof. Sharon Xuesong Wang (Tsinghua University)}
+
+    % \item Selected the target, wrote the observing proposal with our group and conducted the observation at Xinglong Observatory.
+    % \item Checked the periodic characteristics of the transient's light curve together with AAVSO's data.
+    % \item Found the correlation between the transient's magnitude and H$\alpha$ line EW using Pearson coefficient.
+    % % \item {\bf Future:} Model the H$\alpha$ emission from radiative transfer.
+    % % \item Paper in preparation.
+    % \end{rSubsection}
+
+    % \begin{rSubsection}{Search for new multi-quark states in CMS experiments} {Nov. 2021 - Aug. 2022}{Supervisor: Prof. Zhen Hu (Tsinghua University)}{}
+
+    % \item Used ROOT to analyse Trees, plotted histograms and fitted the data.
+    % \item Used CMSSW and CRAB to submit jobs to the CERN computing cluster and conduct Monte Carlo simulations.
+    % \item Generated multiple Monte Carlo datasets in the cross section measurement of a new tetraquark state made of charm quarks.
+
+    % \end{rSubsection}
+\end{rSection}
+
+\newpage
+
+\begin{rSection}{scientific talks}
+    \begin{rSubsection}{Measuring the Mean Free Path of HI Ionizing Photons using DESI Data}{Jul. 2024}{}{}
+    \item Oral Presentation, 2024 DESI Summer Meeting, Marseille, France
+    \end{rSubsection}
+
+    \begin{rSubsection}{Introduction to Normalizing Flow}{May. 2024}{}{}
+    \item Machine Learning Seminar, Department of Astronomy, Tsinghua University
+    \end{rSubsection}
+
+    \begin{rSubsection}{Measuring the Mean Free Path of HI Ionizing Photons using DESI Data}{Sep. 2023}{}{}
+    \item Oral Presentation, 2023 PKU Undergraduate Astronomy Symposium, Beijing, China
+    \end{rSubsection}
+\end{rSection}
+
+
+\begin{rSection}{Skills}
+    \noindent\textbf{Skilled in:} Python, C/C++, Mathematica, Shell/Bash, \LaTeX, Git.
+
+    \vspace{0.5em}
+    
+    \noindent\textbf{Experienced with:}
+    \begin{itemize}[nosep]
+        \item Packages \& softwares for IGM and absorption analysis: Cloudy, VoigtFit, Pyigm, Linetools
+        \item Manipulating catalogs, analyzing dataset and visualization
+        \item Machine learning and building neural network models: normalizing flow, operator learning, ...
+        \item Statistical analysis: MCMC sampling, Bayesian inference, nonparametric methods, ...
+    \end{itemize}
+
+\end{rSection}
+
+% \begin{rSection}{Selected Coursework}
+%     \begin{tabular}{rp{0.4\textwidth}}
+%         \begin{minipage}{0.5\linewidth}
+%             \centering {\bf Physics \& Astronomy}
+
+%             \begin{tabular}{m{0.7\linewidth} m{0.15\linewidth}}
+%                 \item Quantum Mechanics (1) & A-\\
+%                 \item Analytical Mechanics & A\\
+%                 \item Nuclear and Particle Physics & A\\
+%                 \item Observational Astronomy & A\\
+%                 \item Galaxies and the Universe & A\\
+%                 \item Stars and Planets & A\\
+%                 \item Galatic Physics & A-\\
+%         \end{tabular} \end{minipage}
+%         \begin{minipage}{0.5\linewidth}
+%             \centering {\bf Mathematics \& CS}
+
+%             \begin{tabular}{m{0.7\linewidth} m{0.15\linewidth}}
+%                 \item Complex Analysis & A\\
+%                 \item Basic Topology & A-\\
+%                 \item Group Theory & A-\\
+%                 \item Probability Theory & A\\
+%                 \item Multidimensional Statistical Inference & A\\
+%                 \item Machine Learning & A\\
+%                 \item Deep Learning & A-\\
+%             \end{tabular}
+%         \end{minipage}
+%     \end{tabular}
+% \end{rSection}
+
+\begin{rSection}{Scholarships and Awards} \itemsep -2pt
+{Scholarship of the National Astronomical Observatory of China}\hfill {2024\;\;\;\;\;\;\;\;\;} \\
+{Lin-bridge Scholarship, Department of Astronomy, Peking University}\hfill {2023\;\;\;\;\;\;\;\;\;}\\
+{Chi-Sun Yeh Scholarship, Member of the Tsinghua Xuetang Talents Program}\hfill {2021, 2022, 2023} \\
+{Scholarship for Academic Excellence, Department of Physics, Tsinghua University}\hfill {2021, 2022, 2024}\\
+{University Fellowship, The Ohio State University}\hfill {2025\;\;\;\;\;\;\;\;\;}\\
+% {Five-star Volunteer, Tsinghua University}\hfill {2022\;\;\;\;\;\;\;\;\;}\\
+\end{rSection}
+
+
+% \begin{rSection}{References}
+%     \begin{tabularx}{\textwidth}{ 
+%          >{\raggedright\arraybackslash}X 
+%          >{\centering\arraybackslash}X 
+%          >{\centering\arraybackslash}X  }
+%         \textbf{Prof. Jason X. Prochaska} & xavier@ucolick.org & University of California, Santa Cruz\\
+%         \textbf{Prof. Zheng Cai} & zcai@mail.tsinghua.edu.cn & Tsinghua University\\
+%         \textbf{Prof. Cheng Zhao} & czhao@mail.tsinghua.edu.cn & Tsinghua University\\
+%     \end{tabularx}
+
+% \end{rSection}
+\end{document}

@@ -9,4 +9,6 @@ redirect_from:
 
 {% include base_path %}
 
-Click [here](http://AnningGao.github.io/files/CV.pdf) to get the pdf version of my CV. 
+Click [here](http://AnningGao.github.io/files/CV_2025.pdf) to get the pdf version of my CV. 
+
+Last Updated: October 2025

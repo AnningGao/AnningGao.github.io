@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-My name is Anning Gao (高安宁), a undergraduate student majoring in physics in Tsinghua University. 
+My name is Anning Gao (高安宁), a graduate student majoring in astronomy in Ohio State University.
 
 Currently I am conducting research in astronomy, most of which are related to large structures in our universe. More specifically, my research interests can be summerized into 4 aspects:
 
@@ -21,12 +21,4 @@ More details about my research projects can be found in the [research](https://a
 # Contact
 
 - Personal Email: anninggao211@gmail.com
-- Institutional Email: gan20@mails.tsinghua.edu.cn
-
-# Reference
-
-- [J. Xavier Prochaska](https://www.astro.ucsc.edu/faculty/index.php?uid=jxp)
-- [Zheng Cai](https://astro.tsinghua.edu.cn/info/1039/1315.htm)
-- [Cheng Zhao](https://astro.tsinghua.edu.cn/info/1039/2497.htm)
-
-[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fanninggao.github.io&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
+- Institutional Email: gao.2526@osu.edu
