@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-My name is Anning Gao (高安宁), a graduate student majoring in astronomy in Ohio State University.
+My name is Anning Gao (高安宁), an astronomy graduate student in Ohio State University.
 
 Currently I am conducting research in astronomy, most of which are related to large structures in our universe. More specifically, my research interests can be summerized into 4 aspects:
 
